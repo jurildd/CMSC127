@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AttendanceCheckController">
+   <children>
+      <StackPane layoutX="240.0" layoutY="171.0" prefHeight="138.0" prefWidth="160.0">
+         <children>
+            <TextField fx:id="student_id" prefHeight="25.0" prefWidth="189.0" promptText="Student ID" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#handleButtonAction" text="Log-in" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane layoutY="43.0" prefHeight="150.0" prefWidth="640.0">
+         <children>
+            <Label text="Attendance Check">
+               <font>
+                  <Font name="Helvetica" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <StackPane layoutX="219.0" layoutY="428.0" prefHeight="52.0" prefWidth="415.0">
+         <children>
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#handleButtonAction2" text="End Class" StackPane.alignment="CENTER_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane layoutX="220.0" layoutY="318.0" prefHeight="36.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="invalid_label" textFill="RED" />
+            <Label fx:id="valid_label" textFill="LIME" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
